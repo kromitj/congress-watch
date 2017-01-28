@@ -1,0 +1,55 @@
+
+
+<table border="1">
+<tr>
+	<td>thomas_id</td>
+	<td>api_uri</td>
+	<td>first_name</td>
+	<td>middle_name</td>
+	<td>last_name</td>
+	<td>party</td>
+	<td>twitter_account</td>
+	<td>facebook_account</td>
+	<td>facebook_id</td>
+	<td>url</td>
+	<td>rss_url</td>
+	<td>domain</td>
+	<td>dw_nominate</td>
+	<td>ideal_point</td>
+	<td>seniority</td>
+	<td>next_election</td>
+	<td>total_votes</td>
+	<td>missed_votes</td>
+	<td>total_present</td>
+	<td>state</td>
+	<td>missed_votes_pct</td>
+	<td>votes_with_party_pct</td>
+	
+</tr>
+<% @legislators.each do |legislator|%>
+	<tr>
+		<td><%= legislator.thomas_id %> </td>
+		<td><%= legislator.api_uri %></td>		
+		<td><%= legislator.first_name %></td>
+		<td><%= legislator.middle_name %></td>	
+		<td><%= legislator.last_name %> </td>
+		<td><%= legislator.party %></td>		
+		<td><%= legislator.twitter_account %></td>
+		<td><%= legislator.facebook_account %></td>
+		<td><%= legislator.facebook_id %> </td>
+		<td><%= legislator.url %></td>		
+		<td><%= legislator.rss_url %></td>
+		<td><%= legislator.domain %></td>	
+		<td><%= legislator.dw_nominate %> </td>
+		<td><%= legislator.ideal_point %></td>		
+		<td><%= legislator.seniority %></td>
+		<td><%= legislator.next_election %></td>
+		<td><%= legislator.total_votes %> </td>
+		<td><%= legislator.missed_votes %></td>		
+		<td><%= legislator.total_present %></td>
+		<td><%= legislator.state %></td>	
+		<td><%= legislator.missed_votes_pct %> </td>
+		<td><%= legislator.votes_with_party_pct %></td>				
+	</tr>
+<% end %>
+</table>
